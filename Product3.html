@@ -1,0 +1,307 @@
+<!-- Link to Google Fonts for Lato, Poppins, and Calibri -->
+<link
+  href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;700&family=Calibri:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+<!-- Link to your CSS file for custom styling -->
+<link rel="stylesheet" href="styles.css" />
+<!-- Optionally, you can include a favicon -->
+<link rel="icon" img src="logo.jpg" href="favicon.png" />
+<span>RHYNO EV</span>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SE03 LITE</title>
+    <style>
+      /* Add CSS styles for better presentation */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+      .bike-image {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      .color-buttons {
+        margin-top: 20px;
+      }
+      .color-buttons button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 0 5px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .color-buttons button:hover {
+        background-color: #45a049;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      .buy-now {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .buy-now button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .buy-now button:hover {
+        background-color: #45a049;
+      }
+      /* Define classes for different colors */
+      .red {
+        filter: hue-rotate(0deg);
+      }
+      .blue {
+        filter: hue-rotate(240deg);
+      }
+      .green {
+        filter: hue-rotate(120deg);
+      }
+      footer ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      footer ul li {
+        margin: 0 10px;
+      }
+      footer ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+      }
+
+      footer {
+        background-color: #000;
+        height: 55px;
+        width: 100%;
+      }
+      footer {
+        color: #fff;
+      }
+      footer ul li a {
+        color: #fff;
+        font-weight: bold;
+      }
+
+      .nav li a:hover {
+        color: yellow;
+      }
+      footer ul li a:hover {
+        color: yellow;
+      }
+      @media (max-width: 768px) {
+        /* .nav {
+          display: flex;
+          flex-wrap: wrap;
+        } */
+        /* .foot {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        */
+      }
+      header {
+        display: flex;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+      .nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+      .nav ul li {
+        list-style: none;
+      }
+      .nav ul li a {
+        text-decoration: none;
+        color: #ddd;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Logo -->
+      <img src="logo.png" width="100" height="50" alt="Company Logo" />
+
+      <!-- Navigation Menu -->
+      <nav class="nav">
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Product1.html">SE03 Lite</a></li>
+          <li><a href="Product2.html">SE03</a></li>
+          <li><a href="Product3.html">SE03 Max</a></li>
+          <li><a href="Compare All.html">Compare All</a></li>
+          <li><a href="Prebook.html">Pre-Book</a></li>
+          <li><a href="Aboutus.html">About Us</a></li>
+          <li><a href="Contact Us.html">Contact Us</a></li>
+          <li><a href="Rentals.html">Rentals</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <h1>SE03 Max</h1>
+      <!-- Initially set the bike image class to bike-image -->
+      <img src="redbike.png" alt="Bike Model" class="bike-image" />
+      <div class="color-buttons">
+        <!-- Add onclick attribute to each button to change the bike image color -->
+        <button onclick="changeColor('red')">Red</button>
+        <button onclick="changeColor('blue')">Blue</button>
+        <button onclick="changeColor('green')">Green</button>
+        <!-- Add more color options as needed -->
+      </div>
+      <table>
+        <tr>
+          <th>Specifications</th>
+          <th>Value</th>
+        </tr>
+        <tr>
+          <td>Battery</td>
+          <td>1.8kwh</td>
+        </tr>
+        <tr>
+          <td>Battery features</td>
+          <td>LFP with 1500 cycles Active Balancing Waterproof (IP67)</td>
+        </tr>
+        <tr>
+          <td>Battery warranty</td>
+          <td>3 years</td>
+        </tr>
+        <tr>
+          <td>Charging time</td>
+          <td>3 hours (12A)</td>
+        </tr>
+        <tr>
+          <td>Motor</td>
+          <td>Motor</td>
+        </tr>
+        <tr>
+          <td>Max speed</td>
+          <td>1500W</td>
+        </tr>
+        <tr>
+          <td>Warranty on electronics</td>
+          <td>1 year</td>
+        </tr>
+        <tr>
+          <td>Max range (@30km/h)</td>
+          <td>100km</td>
+        </tr>
+        <tr>
+          <td>Max range (@45km/h)</td>
+          <td>90km</td>
+        </tr>
+        <tr>
+          <td>Max range (@3full speed)</td>
+          <td>70km</td>
+        </tr>
+        <tr>
+          <td>Other key benefits</td>
+          <td>
+            Fire-safe Battery Range prediction Comfortable ride Stable and safe
+          </td>
+        </tr>
+        <!-- Add more specifications as needed -->
+      </table>
+      <div class="buy-now">
+        <button onclick="buyNow()">Buy Now</button>
+      </div>
+    </div>
+
+    <script>
+      function changeColor(color) {
+        // Remove existing color class from bike image
+        document
+          .querySelector(".bike-image")
+          .classList.remove("red", "blue", "green");
+        // Add class corresponding to the selected color
+        document.querySelector(".bike-image").classList.add(color);
+      }
+      function buyNow() {
+        // You can add your buy now functionality here
+        alert("You clicked Buy Now button!");
+        // You can redirect to a purchase page or do any other action
+      }
+    </script>
+    <footer>
+      <hr />
+      <nav>
+        <div class="navigation"></div>
+        <div class="foot">
+          <ul>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#refund">Refund Policy</a></li>
+            <li><a href="#website">Website Policy</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#career">Career</a></li>
+            <li><a href="Rentals.html">Rentals</a></li>
+            <li>
+              <a
+                href="https://www.instagram.com/rhyno.in?igsh=MXFwb2VkcnN1bWlhNw=="
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/rhyno-wheels/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>
