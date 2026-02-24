@@ -1,0 +1,270 @@
+<!-- Link to Google Fonts for Lato, Poppins, and Calibri -->
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;700&family=Calibri:wght@400;700&display=swap" rel="stylesheet">
+<!-- Link to your CSS file for custom styling -->
+<link rel="stylesheet" href="styles.css">
+<!-- Optionally, you can include a favicon -->
+<link rel="icon" img src="logo.jpg" href="favicon.png">
+<span>RHYNO EV</span> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SE03 </title>
+    <style>
+        /* Add CSS styles for better presentation */
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: Calibri, sans-serif; /* Added font family */
+        }
+        
+        header a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-family: Calibri, sans-serif; /* Added font family */
+            font-size:20px;
+        }
+        
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        /* CSS for Footer */
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            margin-top: 50px;
+            width: 100%;
+            font-family: Calibri, sans-serif; /* Added font family */
+            display: flex;
+            justify-content: center; /* Center the items horizontally */
+            align-items: center; /* Center the items vertically */
+            flex-wrap: wrap;
+        }
+        
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-family: Calibri, sans-serif; /* Added font family */
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* CSS for social media icons */
+        .footer-icons {
+            margin-top: 10px;
+        }
+
+        .footer-icons i {
+            font-size: 24px;
+            margin: 0 10px;
+            color: #fff;
+            cursor: pointer;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .bike-image {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .color-buttons {
+            margin-top: 20px;
+        }
+        .color-buttons button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 0 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .color-buttons button:hover {
+            background-color: #45a049;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .buy-now {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .buy-now button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .buy-now button:hover {
+            background-color: #45a049;
+        }
+        /* Define classes for different colors */
+        .red { filter: hue-rotate(0deg); }
+        .blue { filter: hue-rotate(240deg); }
+        .green { filter: hue-rotate(120deg); }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Your Logo" height="60"> 
+        <a href="home.html">Home</a>
+        <a href="SE03 Lite1.html">SE03 Lite</a>
+        <a href="SE03.html">SE03</a>
+        <a href="SE03 Max.html">SE03 Max</a>
+        <a href="about us.html">about us</a>
+        <a href="compare.html">Compare all</a>
+        <a href="contact us.html">Contact Us</a>
+        <a href="pre-book.html">Pre-Book Now</a>
+        <a href="https://www.instagram.com/rhyno.in?igsh=MXFwb2VkcnN1bWlhNw=="><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/rhyno-wheels/"><i class="fab fa-linkedin-in"></i></a>
+    </header>
+    <div class="container">
+        <h1>SE03</h1>
+        <!-- Initially set the bike image class to bike-image -->
+        <img src="golden.png" alt="Bike Model" class="bike-image">
+        <div class="color-buttons">
+            <!-- Add onclick attribute to each button to change the bike image color -->
+            <button onclick="changeColor('red')">gold</button>
+            <button onclick="changeColor('blue')">purple</button>
+            <button onclick="changeColor('green')">Green</button>
+            <!-- Add more color options as needed -->
+        </div>
+        <p >Indulge in the perfect harmony of power and range with this Rhyno. Offering an exhilarating experience with its robust 2000W motor, it ensures a thrilling ride while still delivering an impressive 80-100km range on a single charge. Like its counterparts, this machine features the safety assurance of a fire-safe advanced LFP battery, along with the comprehensive benefits of owning a Rhyno. Boasting a formidable combination of a 2000W motor and a 2.7kWh battery, this beast is ready to roar on the roads, providing an electrifying journey at every turn. Check out the other details below!</p>
+        <center><table>
+          <tr>
+              <th><h2>Specification</h2></th>
+              <th><h2>Rhyno SE03</h2></th>
+          </tr>
+          <tr>
+              <th>Battery</th>
+              <td>2.7Kwh</td>
+          </tr>
+          <tr>
+              <th>Battery features</th>
+              <td>                   
+                  <ul>
+                      <li>LFP with 1500 cycles</li>
+                      <li>Active Balancing</li>
+                      <li>Waterproof (IP67)</li>
+                  </ul>
+              </td>
+          </tr>
+          <tr>
+              <th>Battery warranty</th>
+              <td>3 Years</td>
+          </tr>
+          <tr>
+              <th>Charging time</th>
+              <td>4 hours (12A)</td>
+          </tr>
+          <tr>
+              <th>Motor</th>
+              <td>1500W</td>
+          </tr>
+          <tr>
+              <th>Max speed</th>
+              <td>55 km/h</td>
+          </tr>
+          <tr>
+              <th>Warranty on electronics</th>
+              <td>1 year</td>
+          </tr>
+          <tr>
+              <th>Max range (@30km/h)</th>
+              <td>150 km</td>
+          </tr>
+          <tr>
+              <th>Max range (@45km/h)</th>
+              <td>110 km</td>
+          </tr>
+          <tr>
+              <th>Max range (@full speed)</th>
+              <td>90 km</td>
+          </tr>
+          <tr>
+              <th>Other key benefits</th>
+              <td>
+                  <ul>
+                      <li>Fire-safe battery</li>
+                      <li>Range prediction</li>
+                      <li>Comfortable ride</li>
+                      <li>Stable and safe</li>
+                  </ul>
+              </td>
+          </tr>
+      </table></center>
+        <div class="buy-now">
+            <button onclick="buyNow()">Buy Now</button>
+        </div>
+    </div>
+
+    <script>
+        function changeColor(color) {
+            // Remove existing color class from bike image
+            document.querySelector('.bike-image').classList.remove('red', 'blue', 'green');
+            // Add class corresponding to the selected color
+            document.querySelector('.bike-image').classList.add(color);
+        }
+        function buyNow() {
+            // You can add your buy now functionality here
+            alert("You clicked Buy Now button!");
+            // You can redirect to a purchase page or do any other action
+        }
+    </script>
+    <footer>
+        <a href="privacypolicy.html">Privacy Policy</a>
+        <a href="refundpolicy.html">Refund Policy</a>
+        <a href="websitepolicy.html">Website Policy</a>
+        <a href="contact us.html">Contact Us</a>
+        <a href="SE03.html">Products</a>
+        <a href="career.html">Career</a>
+        <a href="rentals.html">Rentals</a>
+        
+        <!-- Social media icons -->
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/rhyno.in?igsh=MXFwb2VkcnN1bWlhNw=="><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/rhyno-wheels/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
