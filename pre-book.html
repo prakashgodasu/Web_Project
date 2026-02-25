@@ -42,13 +42,14 @@
             color: #fff;
             padding: 20px 0;
             text-align: center;
-            position: fixed;
-            bottom: 2px;
+            position: relative;
+            margin-top: 30px;
             width: 100%;
             font-family: Calibri, sans-serif; /* Added font family */
             display: flex;
             justify-content: center; /* Center the items horizontally */
             align-items: center; /* Center the items vertically */
+            flex-wrap: wrap;
         }
         
         footer a {
@@ -161,7 +162,7 @@
     <div class="container">
         <h1>Pre-Book Now</h1>
         <p>Fill out the form below to pre-book your product:</p>
-        <form action="#" method="post">
+        <form onsubmit="handleBooking(event)">
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required>
             
@@ -172,8 +173,19 @@
             <input type="tel" id="phone" name="phone" required>
             
             <input type="submit" value="Pre-Book Now">
+
+            <div id="successMessage"
+            style="color:green; font-weight:bold; margin-top:10px;"></div>
         </form>
     </div>
+    <script>
+        function handleBooking(event)
+        {
+            event.preventDefault();
+            document.getElementById("successMessage").innerText="Pre-booking successful! our team will contact you shortly.";
+            document.querySelector("form").reset();
+        }
+    </script>
 </body>
 </html>
 
